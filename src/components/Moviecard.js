@@ -3,9 +3,9 @@ import "./Moviecard.css";
 import Popup from "./Popup";
 
 export default function Moviecard(props) {
-  const [popUp, setPopUp] = useState(false);
+  const [popup, setPopup] = useState(false);
   function popedUp() {
-    setPopUp(true);
+    setPopup(true);
   }
   return (
     <>
@@ -17,7 +17,7 @@ export default function Moviecard(props) {
         <p className="title">{props.title}</p>
         <p className="genre">{props.genre}</p>
         <p className="year">{props.year}</p>
-        {popUp ? (
+        {popup ? (
           <Popup
             title={props.title}
             desc={props.desc}
