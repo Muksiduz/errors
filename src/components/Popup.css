@@ -1,0 +1,36 @@
+.popup-container{
+    position: fixed;
+    top: 100px;
+    left: 35%;
+    z-index: 5;
+    width: 400px;
+    height:500px;
+    
+    border-radius: 22px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+
+
+}
+.popup-container>img{
+    width: 350px;
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 22px;
+   object-fit: cover;
+}
+.pop-title{
+    font-size: 24px;
+    margin: 5px;
+}
+.pop-year{
+    font-size: 24px;
+    margin: 5px;
+}
+.pop-desc{
+   font-size: 16px;
+   margin: 5px;
+}
