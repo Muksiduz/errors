@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Backdrop from "../Backdrop";
 import "./Moviecard.css";
 import Popup from "./Popup";
 
@@ -6,6 +7,9 @@ export default function Moviecard(props) {
   const [popup, setPopup] = useState(false);
   function popedUp() {
     setPopup(true);
+  }
+  function popedBackdrop() {
+    setPopup(null);
   }
   return (
     <>
@@ -26,6 +30,7 @@ export default function Moviecard(props) {
           />
         ) : null}
       </div>
+      {popup ? <Backdrop onClick={popedBackdrop} /> : null}
     </>
   );
 }
