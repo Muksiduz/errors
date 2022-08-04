@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Backdrop from "../Backdrop";
+import Backdrop from "./Backdrop";
 import "./Moviecard.css";
 import Popup from "./Popup";
 

@@ -1,8 +1,9 @@
 .backdrop{
     background-color: grey;
     width: 100vw;
-    height: 200vh;
-    z-index: -1;
+    height: 150vh;
+    outline: 1px solid green;
+    z-index: -3;
     position: absolute;
     top: 0;
     left: 0;
